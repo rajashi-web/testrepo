@@ -1,0 +1,33 @@
+<p>viewstudent works!</p>
+
+<h3 class="text-center">thank you for submitting the data</h3>
+<br>
+<br>
+
+<div>
+    <table class="table table-bordered">
+        <thead class="thead" >
+            <tr>
+                <th>sid</th>
+                <th>sname</th>
+                <th>gender</th>
+                <th>sage</th>
+                <th>mark</th>
+            </tr>
+           
+        </thead >
+        <tbody *ngFor="let item of student">
+            <tr>
+                <td>{{item.sid}}</td>
+                <td>{{item.sname}}</td>
+                <td>{{item.gender}}</td>
+                <td>{{item.sage}}</td>
+                <td>{{item.mark}}</td>
+                <td><button (click)="goto(item.sid)">update</button></td>
+                <td><button (click)="delete(item.sid)">delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

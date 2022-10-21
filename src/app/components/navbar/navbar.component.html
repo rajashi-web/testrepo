@@ -1,0 +1,18 @@
+<h1 class="text-center">
+
+  {{firsttitle}} 
+
+</h1>
+<button class="btn btn-danger" disabled={{btntype}}>click</button>   
+<br>
+<h2 class="text-center">{{secondtitle}}</h2>
+<button class="btn btn-danger" [disabled]="btntype">click</button> 
+<br>
+<h2  class=""text-center> 
+    eventbinding
+</h2> 
+<button class="btn btn-danger" (click)="changefirsttitle()">click me to change </button> 
+<br>
+<br>   
+<input type="text"  [(ngModel)]="name" placeholder="enter the name" >
+<h1>welcom Mrs. {{name}}</h1>

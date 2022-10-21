@@ -1,0 +1,51 @@
+<p>updatestudent works!</p>
+
+<p>works</p>
+<form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>student id</label>
+        <input  type="sid" disabled="true" [(ngModel)]="student.sid" sid ngModel class="form-control" name="sid" 
+         placeholder="enter valid student id">
+        
+         
+        
+
+        
+    </div>
+    <div class="form-group">
+        <label>student name</label>
+        <input required [(ngModel)]="student.sname"  type="sname" sname ngModel class="form-control" name="sname" 
+        placeholder="enter valid student name">
+
+    
+    </div>
+
+    <div class="form-group">
+        <label>student age</label>
+        <input required [(ngModel)]="student.sage"  type="sage" sage ngModel class="form-control" name="sage" 
+        placeholder="enter valid student age">
+
+    
+    </div>
+
+    <div class="form-group">
+        <label>student gender</label>
+        <input required [(ngModel)]="student.gender"  type="gender" gender ngModel class="form-control" name="gender" 
+        placeholder="enter valid student gender">
+
+    
+    </div>
+
+    <div class="form-group">
+        <label>student mark</label>
+        <input required [(ngModel)]="student.mark"  type="mark" mark ngModel class="form-control" name="mark" 
+        placeholder="enter valid student mank">
+
+    
+    </div>
+    <button type="submit" class="btn btn-secondary" >click</button>
+</form>
+
+
+
+

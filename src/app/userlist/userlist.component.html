@@ -1,0 +1,23 @@
+<h3 class="text-center">thank you for submitting the data</h3>
+<br>
+<br>
+
+<div>
+    <table class="table table-bordered">
+        <thead class="thead" >
+            <tr>
+                <th>emailId</th>
+                <th>password</th>
+            </tr>
+           
+        </thead >
+        <tbody *ngFor="let item of userdetails">
+            <tr>
+                <td>{{item.emailId}}</td>
+                <td>{{item.password}}</td>
+                <td><button (click)="updatedetails(item.emailId)">update</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

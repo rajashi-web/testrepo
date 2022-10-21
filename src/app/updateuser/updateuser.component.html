@@ -1,0 +1,26 @@
+<p>updateuser works!</p>
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>email id</label>
+        <input  type="email" [(ngModel)]="user.emailId" email ngModel class="form-control" name="emailId" 
+         placeholder="enter valid email">
+        
+         
+        
+
+        
+    </div>
+    <div class="form-group">
+        <label>password</label>
+        <input required [(ngModel)]="user.password" minlength="4" type="password" password ngModel class="form-control" name="password" 
+        placeholder="enter valid password">
+
+    
+    </div>
+    <button type="submit" class="btn btn-secondary">click</button>
+</form>
+
+
+
+
